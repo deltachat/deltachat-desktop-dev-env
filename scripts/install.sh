@@ -14,9 +14,5 @@ cd ..
 
 cd ./deltachat-desktop/
 npm link ../deltachat-node
-cd ..
-
-cd deltachat-desktop
-npm i
 npm run build
 cd ..
