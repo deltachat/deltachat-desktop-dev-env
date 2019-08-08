@@ -2,7 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "deltachat-core-rust"
 		}
-	],
-	"settings": {}
+	]
 }
