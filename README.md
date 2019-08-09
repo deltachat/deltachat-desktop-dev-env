@@ -15,6 +15,8 @@ npx electron .
 6. when electron is running press `F5` and attach the debugger to the first electron process (should be the one with the lowest process id)
 
 
+> Info: the rust extention has some minor problems with this setup, because the support for multi folder workspaces isn't merged there yet https://github.com/rust-lang/rls-vscode/pull/638
+
 
 ## Use without vscode
 

@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "Deltachat Core",
+			"path": "deltachat-core-rust",
 		},
 		{
-			"path": "deltachat-core-rust"
+			"name": "workspace folder",
+			"path": "."
 		}
 	],
 	"extensions": {
@@ -15,5 +17,15 @@
 			"rust-lang.rust",
 			"chenxsan.vscode-standardjs"
 		],
+	},
+	"launch": {
+		"configurations": [{
+            "name": "Attach to Process",
+            "type": "lldb",
+            "request": "attach",
+            "pid": "${command:pickMyProcess}",
+            "sourceLanguages": ["rust", "c"]
+        }],
+		"compounds": []
 	}
 }
