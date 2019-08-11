@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "deltachat-core-rust": true,
+        "deltachat-desktop": true,
+        "deltachat-node": true
+    }
+}

@@ -1,11 +1,19 @@
 {
 	"folders": [
 		{
-			"name": "Deltachat Core",
-			"path": "deltachat-core-rust",
+			"name": "Rust Core",
+			"path": "deltachat-core-rust"
 		},
 		{
-			"name": "workspace folder",
+			"name": "Node Bindings",
+			"path": "deltachat-node"
+		},
+		{
+			"name": "Desktop (electron)",
+			"path": "deltachat-desktop"
+		},
+		{
+			"name": "Workspace Root",
 			"path": "."
 		}
 	],
@@ -27,5 +35,21 @@
             "sourceLanguages": ["rust", "c"]
         }],
 		"compounds": []
+	},
+	"settings": {
+		"workbench.enableExperiments": false,
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"workbench.settings.enableNaturalLanguageSearch": false,
+		"editor.find.seedSearchStringFromSelection": false,
+		"search.exclude": {
+			"**/target": true,
+			"deltachat-core-rust": true,
+			"deltachat-desktop": true,
+			"deltachat-node": true
+		},
+		"files.exclude": {
+			"**/target": true
+		}
 	}
 }
