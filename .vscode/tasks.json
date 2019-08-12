@@ -11,6 +11,15 @@
             },
             "label": "Top Evil RS (spot unsafe C stuff)",
             "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "command": "npm run build",
+            "options": {
+                "cwd": "deltachat-desktop/"
+            },
+            "label": "Build Desktop (js+scss+translations)",
+            "problemMatcher": []
         }
     ]
 }
