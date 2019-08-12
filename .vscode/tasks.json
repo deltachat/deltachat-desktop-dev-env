@@ -4,17 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "npm",
-            "script": "rebuild-all",
-            "path": "deltachat-node/",
-            "problemMatcher": ["$rustc"],
-            "label": "rebuild-all-dc-node"
-        },
-        {
-            "type": "npm",
-            "script": "build",
-            "path": "deltachat-desktop/",
-            "label": "build-interface"
+            "type": "shell",
+            "command": "python3 top_evil_rs.py",
+            "options": {
+                "cwd": "deltachat-core-rust/src/"
+            },
+            "label": "Top Evil RS (spot unsafe C stuff)",
+            "problemMatcher": []
         }
     ]
 }
