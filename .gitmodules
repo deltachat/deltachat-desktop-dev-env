@@ -7,4 +7,4 @@
 	branch = rust_devmode_branch
 [submodule "deltachat-desktop"]
 	path = deltachat-desktop
-	url = https://github.com/deltachat/deltachat-desktop/
+	url = git@github.com:deltachat/deltachat-desktop.git
