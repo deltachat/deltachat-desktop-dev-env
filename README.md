@@ -43,3 +43,12 @@ cd deltachat-node
 npm run build
 cd ..
 ```
+
+### Python tests
+
+To setup also run `./init_python_test_env.sh`.
+
+To run the tests run `./run-pytest.sh`.
+
+
+To debug the tests run `./scripts/install-py-bindings.sh` and then start debugging with the `Debug Tests (pytest)` profile selected.

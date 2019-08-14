@@ -33,7 +33,18 @@
             "request": "attach",
             "pid": "${command:pickMyProcess}",
             "sourceLanguages": ["rust", "c"]
-        }],
+		},
+		{
+			"name": "Debug Tests (pytest)",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${workspaceFolder:Workspace Root}/venv/bin/python", // Is there a better way? that here is really inefficient
+			"args": ["${workspaceFolder:Workspace Root}/venv/bin/pytest","-v","tests"],
+			"cwd": "${workspaceFolder:Workspace Root}/deltachat-core-rust/python/",
+			"terminal": "console",
+			"sourceLanguages": ["rust", "c", "python"]
+		}
+		],
 		"compounds": []
 	},
 	"settings": {

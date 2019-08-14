@@ -5,12 +5,29 @@
     "tasks": [
         {
             "type": "shell",
-            "command": "python3 top_evil_rs.py",
+            "command": "source ../../venv/bin/activate && ./top_evil_rs.py",
             "options": {
                 "cwd": "deltachat-core-rust/src/"
             },
-            "label": "Top Evil RS (spot unsafe C stuff)",
+            "label": "Top Evil RS (spot unsafe C stuff) (req. virtenv to be setup)",
             "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "command": "./run-pytest.sh",
+            "label": "Pytest (Integration tests)",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "command": "npm run rebuild-all",
+            "options": {
+                "cwd": "deltachat-node/"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "label": "rebuild-all-dc-node"
         },
         {
             "type": "shell",
