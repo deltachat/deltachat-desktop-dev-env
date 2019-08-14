@@ -1,6 +1,6 @@
 ## How to use this:
 
-0. Make sure you have rustup and nodejs installed
+0. Make sure you have rustup, nodejs, python and virtualenv installed
 
 1. Run init.sh (I didn't make a batch file for windows yet)
 2. If you want to use lldb in VSCode install that otherwise you should be up to go now.
