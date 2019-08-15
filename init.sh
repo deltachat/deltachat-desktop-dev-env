@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+git submodule init
 git submodule update --remote
 
 # the following 2 points are covered by the node branch for now
