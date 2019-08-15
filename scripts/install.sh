@@ -2,7 +2,7 @@
 set -e
 
 rm -rf ./deltachat-node/deltachat-core-rust
-ln -sf ../deltachat-core-rust/ ./deltachat-node/
+ln -sf ./deltachat-core-rust/ ./deltachat-node/
 
 cd deltachat-core-rust
 cargo build
