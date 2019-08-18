@@ -39,7 +39,7 @@
 			"type": "lldb",
 			"request": "launch",
 			"program": "${workspaceFolder:Workspace Root}/venv/bin/python", // Is there a better way? that here is really inefficient
-			"args": ["${workspaceFolder:Workspace Root}/venv/bin/pytest","-v","tests"],
+			"args": ["${workspaceFolder:Workspace Root}/venv/bin/pytest","-v","tests","--liveconfig","./liveconfig"],
 			"cwd": "${workspaceFolder:Workspace Root}/deltachat-core-rust/python/",
 			"terminal": "console",
 			"sourceLanguages": ["rust", "c", "python"]
@@ -52,7 +52,6 @@
 		"telemetry.enableCrashReporter": false,
 		"telemetry.enableTelemetry": false,
 		"workbench.settings.enableNaturalLanguageSearch": false,
-		"editor.find.seedSearchStringFromSelection": false,
 		"search.exclude": {
 			"**/target": true,
 			"deltachat-core-rust": true,
