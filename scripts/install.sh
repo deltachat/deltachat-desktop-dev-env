@@ -14,5 +14,6 @@ cd ..
 
 cd ./deltachat-desktop/
 npm link ../deltachat-node
+npm install --only=dev
 npm run build
 cd ..
