@@ -1,10 +1,10 @@
 [submodule "deltachat-core-rust"]
 	path = deltachat-core-rust
-	url = git@github.com:deltachat/deltachat-core-rust.git
+	url = ../deltachat-core-rust.git
 [submodule "deltachat-node"]
 	path = deltachat-node
-	url = git@github.com:deltachat/deltachat-node.git
+	url = ../deltachat-node.git
 	branch = rust_devmode_branch
 [submodule "deltachat-desktop"]
 	path = deltachat-desktop
-	url = git@github.com:deltachat/deltachat-desktop.git
+	url = ../deltachat-desktop.git
