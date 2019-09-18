@@ -22,7 +22,10 @@
             "type": "shell",
             "command": "npm run rebuild-all",
             "options": {
-                "cwd": "deltachat-node/"
+                "cwd": "deltachat-node/",
+                "env": {
+                    "RUSTFLAGS": "-g"
+                }
             },
             "problemMatcher": [
                 "$rustc"

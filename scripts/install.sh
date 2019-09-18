@@ -9,6 +9,7 @@ cargo build
 cd ..
 
 cd deltachat-node
+export RUSTFLAGS=-g
 npm i
 cd ..
 
