@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-git submodule init
-git submodule update --remote
+git submodule update --init --recursive
 
 # the following 2 points are covered by the node branch for now
 # idea replace all "release" with "debug" in deltachat-node/binding.gyp
