@@ -9,7 +9,7 @@ virtualenv venv
 source venv/bin/activate
 
 # install dependencies
-pip install pytest pytest-timeout requests
+pip install pytest pytest-timeout pytest-rerunfailures requests
 
 deactivate
 
