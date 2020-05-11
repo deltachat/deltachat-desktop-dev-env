@@ -23,7 +23,7 @@
 			"coenraads.bracket-pair-colorizer-2",
 			"naumovs.color-highlight",
 			"rust-lang.rust",
-			"chenxsan.vscode-standardjs"
+			"esbenp.prettier-vscode"
 		],
 	},
 	"launch": {
@@ -56,6 +56,18 @@
 			"cwd": "${workspaceFolder:Workspace Root}/deltachat-core-rust/python/",
 			"terminal": "console",
 			"sourceLanguages": ["rust", "c", "python"]
+		},
+		{
+			"name": "Debug Electron Main Process",
+			"type": "node",
+			"request": "launch",
+			"cwd": "${workspaceFolder:Workspace Root}/deltachat-desktop",
+			"runtimeExecutable": "${workspaceFolder:Workspace Root}/deltachat-desktop/node_modules/.bin/electron",
+			"windows": {
+			  "runtimeExecutable": "${workspaceFolder:Workspace Root}/deltachat-desktop/node_modules/.bin/electron.cmd"
+			},
+			"args" : ["."],
+			"outputCapture": "std",
 		}
 		],
 		"compounds": []
@@ -73,6 +85,7 @@
 		},
 		"files.exclude": {
 			"**/target": true
-		}
+		},
+		"typescript.tsdk": "Desktop (electron)/node_modules/typescript/lib"
 	}
 }

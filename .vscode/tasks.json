@@ -20,7 +20,7 @@
         },
         {
             "type": "shell",
-            "command": "npm run rebuild-all",
+            "command": "npm run build",
             "options": {
                 "cwd": "deltachat-node/",
                 "env": {
