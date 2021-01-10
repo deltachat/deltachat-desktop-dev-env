@@ -40,6 +40,7 @@
     "files.exclude": {
       "**/target": true
     },
-    "typescript.tsdk": "Desktop (electron)/node_modules/typescript/lib"
+    "typescript.tsdk": "Desktop (electron)/node_modules/typescript/lib",
+    "python.pythonPath": "../venv/bin/python"
   }
 }
