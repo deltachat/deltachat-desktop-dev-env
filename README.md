@@ -46,7 +46,8 @@ cd ..
 
 ### Python tests
 
-To setup also run `./init_python_test_env.sh`.
+To setup also run `./init_python_test_env.sh`. 
+(this script removes the virtual python enviroment then recreates it and installs all dependencies)
 
 To run the tests run `./run-pytest.sh`.
 

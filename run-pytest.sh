@@ -9,6 +9,6 @@ cd deltachat-core-rust/python
 
 python install_python_bindings.py
 
-pytest -v tests --liveconfig ./liveconfig
+pytest -v tests -n auto --liveconfig ./liveconfig
 
 deactivate
