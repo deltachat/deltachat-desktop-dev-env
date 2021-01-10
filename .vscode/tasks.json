@@ -1,56 +1,54 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558 
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "type": "shell",
-            "command": "source ../../venv/bin/activate && ./top_evil_rs.py",
-            "options": {
-                "cwd": "deltachat-core-rust/src/"
-            },
-            "label": "Top Evil RS (spot unsafe C stuff) (req. virtenv to be setup)",
-            "problemMatcher": []
-        },
-        {
-            "type": "shell",
-            "command": "./run-pytest.sh",
-            "label": "Pytest (Integration tests)",
-            "options": {
-                "env": {"DCC_NEW_TMP_EMAIL": "${input:DCC_NEW_TMP_EMAIL}"}
-            },
-            "problemMatcher": []
-        },
-        {
-            "type": "shell",
-            "command": "npm run build",
-            "options": {
-                "cwd": "deltachat-node/",
-                "env": {
-                    "RUSTFLAGS": "-g"
-                }
-            },
-            "problemMatcher": [
-                "$rustc"
-            ],
-            "label": "rebuild-all-dc-node"
-        },
-        {
-            "type": "shell",
-            "command": "npm run build",
-            "options": {
-                "cwd": "deltachat-desktop/"
-            },
-            "label": "Build Desktop (js+scss+translations)",
-            "problemMatcher": []
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "source ../../venv/bin/activate && ./top_evil_rs.py",
+      "options": {
+        "cwd": "deltachat-core-rust/src/"
+      },
+      "label": "Top Evil RS (spot unsafe C stuff) (req. virtenv to be setup)",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "command": "./run-pytest.sh",
+      "label": "Pytest (Integration tests)",
+      "options": {
+        "env": { "DCC_NEW_TMP_EMAIL": "${input:DCC_NEW_TMP_EMAIL}" }
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "command": "npm run build",
+      "options": {
+        "cwd": "deltachat-node/",
+        "env": {
+          "RUSTFLAGS": "-g"
         }
-    ],
-    "inputs": [
-        {
-          "id": "DCC_NEW_TMP_EMAIL",
-          "type": "promptString",
-          "description": "value for DCC_NEW_TMP_EMAIL env var (skip to run only offline tests)",
-          "password": true,
-        }
-      ]
+      },
+      "problemMatcher": ["$rustc"],
+      "label": "rebuild-all-dc-node"
+    },
+    {
+      "type": "shell",
+      "command": "npm run build",
+      "options": {
+        "cwd": "deltachat-desktop/"
+      },
+      "label": "Build Desktop (js+scss+translations)",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "DCC_NEW_TMP_EMAIL",
+      "type": "promptString",
+      "description": "value for DCC_NEW_TMP_EMAIL env var (skip to run only offline tests)",
+      "password": true
+    }
+  ]
 }

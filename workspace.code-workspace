@@ -1,45 +1,45 @@
 {
-	"folders": [
-		{
-			"name": "Rust Core",
-			"path": "deltachat-core-rust"
-		},
-		{
-			"name": "Node Bindings",
-			"path": "deltachat-node"
-		},
-		{
-			"name": "Desktop (electron)",
-			"path": "deltachat-desktop"
-		},
-		{
-			"name": "Workspace Root",
-			"path": "."
-		}
-	],
-	"extensions": {
-		"recommendations": [
-			"vadimcn.vscode-lldb",
-			"coenraads.bracket-pair-colorizer-2",
-			"naumovs.color-highlight",
-			"rust-lang.rust",
-			"esbenp.prettier-vscode"
-		],
-	},
-	"settings": {
-		"workbench.enableExperiments": false,
-		"telemetry.enableCrashReporter": false,
-		"telemetry.enableTelemetry": false,
-		"workbench.settings.enableNaturalLanguageSearch": false,
-		"search.exclude": {
-			"**/target": true,
-			"deltachat-core-rust": true,
-			"deltachat-desktop": true,
-			"deltachat-node": true
-		},
-		"files.exclude": {
-			"**/target": true
-		},
-		"typescript.tsdk": "Desktop (electron)/node_modules/typescript/lib"
-	}
+  "folders": [
+    {
+      "name": "Rust Core",
+      "path": "deltachat-core-rust"
+    },
+    {
+      "name": "Node Bindings",
+      "path": "deltachat-node"
+    },
+    {
+      "name": "Desktop (electron)",
+      "path": "deltachat-desktop"
+    },
+    {
+      "name": "Workspace Root",
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "vadimcn.vscode-lldb",
+      "coenraads.bracket-pair-colorizer-2",
+      "naumovs.color-highlight",
+      "rust-lang.rust",
+      "esbenp.prettier-vscode"
+    ]
+  },
+  "settings": {
+    "workbench.enableExperiments": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "search.exclude": {
+      "**/target": true,
+      "deltachat-core-rust": true,
+      "deltachat-desktop": true,
+      "deltachat-node": true
+    },
+    "files.exclude": {
+      "**/target": true
+    },
+    "typescript.tsdk": "Desktop (electron)/node_modules/typescript/lib"
+  }
 }
