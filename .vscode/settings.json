@@ -3,5 +3,6 @@
         "deltachat-core-rust": true,
         "deltachat-desktop": true,
         "deltachat-node": true
-    }
+    },
+    "python.pythonPath": "venv/bin/python"
 }
