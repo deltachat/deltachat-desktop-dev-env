@@ -53,3 +53,5 @@ To run the tests run `./run-pytest.sh`.
 
 
 To debug the tests run `./scripts/install-py-bindings.sh` and then start debugging with the `Debug Tests (pytest)` profile selected.
+
+When you want to test the online tests you need to set the `DCC_NEW_TMP_EMAIL` enviroment variable, read more about it in [deltachat-core-rust/python/README.rst](deltachat-core-rust/python/README.rst#L58).

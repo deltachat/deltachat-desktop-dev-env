@@ -16,6 +16,9 @@
             "type": "shell",
             "command": "./run-pytest.sh",
             "label": "Pytest (Integration tests)",
+            "options": {
+                "env": {"DCC_NEW_TMP_EMAIL": "${input:DCC_NEW_TMP_EMAIL}"}
+            },
             "problemMatcher": []
         },
         {
@@ -41,5 +44,13 @@
             "label": "Build Desktop (js+scss+translations)",
             "problemMatcher": []
         }
-    ]
+    ],
+    "inputs": [
+        {
+          "id": "DCC_NEW_TMP_EMAIL",
+          "type": "promptString",
+          "description": "value for DCC_NEW_TMP_EMAIL env var (skip to run only offline tests)",
+          "password": true,
+        }
+      ]
 }

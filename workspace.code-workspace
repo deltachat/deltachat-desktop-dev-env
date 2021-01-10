@@ -26,52 +26,6 @@
 			"esbenp.prettier-vscode"
 		],
 	},
-	"launch": {
-		"configurations": [
-			{
-			    "type": "lldb",
-			    "request": "launch",
-			    "name": "Debug DC Desktop",
-			    "program": "${workspaceFolder:Desktop (electron)}/node_modules/electron/dist/electron",
-				"args": ["${workspaceFolder:Desktop (electron)}"],
-				"stopOnEntry": true,
-				"sourceLanguages": ["rust", "c"],
-				"env": { 
-					"ELECTRON_RUN_AS_NODE": "",
-					"ELECTRON_NO_ATTACH_CONSOLE": "",
-				}
-			},{
-            "name": "Attach to Process",
-            "type": "lldb",
-            "request": "attach",
-            "pid": "${command:pickMyProcess}",
-            "sourceLanguages": ["rust", "c"]
-		},
-		{
-			"name": "Debug Tests (pytest)",
-			"type": "lldb",
-			"request": "launch",
-			"program": "${workspaceFolder:Workspace Root}/venv/bin/python", // Is there a better way? that here is really inefficient
-			"args": ["${workspaceFolder:Workspace Root}/venv/bin/pytest","-v","tests","--liveconfig","./liveconfig"],
-			"cwd": "${workspaceFolder:Workspace Root}/deltachat-core-rust/python/",
-			"terminal": "console",
-			"sourceLanguages": ["rust", "c", "python"]
-		},
-		{
-			"name": "Debug Electron Main Process",
-			"type": "node",
-			"request": "launch",
-			"cwd": "${workspaceFolder:Workspace Root}/deltachat-desktop",
-			"runtimeExecutable": "${workspaceFolder:Workspace Root}/deltachat-desktop/node_modules/.bin/electron",
-			"windows": {
-			  "runtimeExecutable": "${workspaceFolder:Workspace Root}/deltachat-desktop/node_modules/.bin/electron.cmd"
-			},
-			"args" : ["."],
-			"outputCapture": "std",
-		}
-		],
-		"compounds": []
-	},
 	"settings": {
 		"workbench.enableExperiments": false,
 		"telemetry.enableCrashReporter": false,
